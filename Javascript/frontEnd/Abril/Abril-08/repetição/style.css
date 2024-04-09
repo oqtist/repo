@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(129, 129, 129);
+}
+
+#divResultado{
+    background-color: black;
+    color: blueviolet;
+    font-family:comic sans ms
+}
+
+#exercicio2{
+    background-color: beige;
+}
+
+#exercicio3{
+    background-color: rgb(100, 0, 0);
+}
