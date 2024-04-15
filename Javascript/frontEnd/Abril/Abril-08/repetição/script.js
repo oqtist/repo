@@ -1,6 +1,8 @@
 
-    let resultado = document.getElementById('divResultado')
+    let exercicio1 = document.getElementById('exercicio1')
     console.log(resultado);
+
+    let resultado = document.getElementById('resultado')
 
     // // let nome = prompt("Digite seu nome: ")
     // // resultado.innerHTML = "Olá, " + nome
@@ -16,13 +18,6 @@
     //     cont--
     // }
 
-    // //Quadrados 1-10
-    // let cont = 0
-    // while (cont < 11) {
-    //     resultado.innerHTML += (`${cont ** 2}<br>`)
-    //     cont++
-    // }
-
     // //10-1 (decrescente)
     // let cont = 10
     // while (cont > 0) {
@@ -30,14 +25,14 @@
     //     cont--
     // }
 
-    // //Soma 1-100
-    // let cont = 0
-    // let soma = 0
-    // while (cont <= 100) {
-    //     cont++
-    //     soma += cont
-    //     resultado.innerHTML = (`Soma dos números de 1 a 100:<br>${soma}`)
-    // }
+    //Soma 1-100
+    let cont = 0
+    let soma = 0
+    while (cont <= 100) {
+        cont++
+        soma += cont
+        resultado.innerHTML = (`Soma dos números de 1 a 100:<br>${soma}`)
+    }
 
     // //Tabuda de 5 (1-10)
     // let cont = 0
