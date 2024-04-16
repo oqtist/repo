@@ -1,6 +1,10 @@
+<<<<<<< HEAD
+   let resultado = document.getElementById('resultado')
+=======
 
     let exercicio1 = document.getElementById('exercicio1')
     console.log(resultado);
+>>>>>>> 21a2b90cde97f7d1a691aad9d1bec1bf8c3004e7
 
     let resultado = document.getElementById('resultado')
 
@@ -18,6 +22,8 @@
     //     cont--
     // }
 
+<<<<<<< HEAD
+=======
     // //10-1 (decrescente)
     // let cont = 10
     // while (cont > 0) {
@@ -25,6 +31,7 @@
     //     cont--
     // }
 
+>>>>>>> 21a2b90cde97f7d1a691aad9d1bec1bf8c3004e7
     //Soma 1-100
     let cont = 0
     let soma = 0
