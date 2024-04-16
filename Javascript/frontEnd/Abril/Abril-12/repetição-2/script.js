@@ -5,7 +5,7 @@ function p2e7() {
     let largura = Number(prompt('Escreva a largura do quadro: '))
     let altura = Number(prompt('Escreva a altura do quadro: '))
     p2e7.innerHTML = ('')
-    
+
     while (contA < altura) {
         contL = 0
         while (contL < largura) {
@@ -18,7 +18,7 @@ function p2e7() {
 
 }
 
-function p3ej(){
+function p3ej() {
     let p3ej = document.getElementById('p3ej')
     let salarioDisplay = document.getElementById('p3ejSalario')
     let maiorDisplay = document.getElementById('p3ejMaior')
@@ -33,20 +33,24 @@ function p3ej(){
 
     while (salario > 0) {
         salario = Number(prompt('Digite um salário:\n(Digite 0 para parar)'))
-        if(salario >= 2500 && salario != 0) {
-        salarioDisplay.innerHTML += (`R$ ${salario.toFixed(2)}<br>`)
-        salarioMenorDisplay.innerHTML += (`R$ ${(salario * 1.1).toFixed(2)}<br>`)
-        soma += salario
-        somaCorrigida += salario
+        if (salario > 0) {
+            salarioDisplay.innerHTML += (`R$ ${salario.toFixed(2)}<br>`)
+            soma += salario
+            if (salario < 2500 && salario != 0) {
+                salarioMenorDisplay.innerHTML += (`R$ ${(salario * 1.1).toFixed(2)}<br>`)
+                somaCorrigida += (salario * 1.1)
+            } else {
+                salarioMenorDisplay.innerHTML += (`R$ ${(salario).toFixed(2)}<br>`)
+                somaCorrigida += salario
+            }
         }
+
         if (salario > maior) {
             maior = salario
         }
-        if (salario < 2500 && salario != 0) {
-            salarioMenorDisplay.innerHTML += (`R$ ${(salario * 1.1).toFixed(2)}<br>`)
-            somaCorrigida += (salario * 1.1)
-        }
+
+        total.innerHTML = (`R$ ${soma}`)
+        totalCorrigido.innerHTML = (`R$ ${somaCorrigida.toFixed(2)}`)
+        maiorDisplay.innerHTML = (`R$ ${maior}`)
     }
-    total.innerHTML = (`R$ ${soma}`)
-    totalCorrigido.innerHTML = (`R$ ${somaCorrigida.toFixed(2)}`)
 }
