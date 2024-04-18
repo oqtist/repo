@@ -1,0 +1,42 @@
+body {
+    margin: 50px 350px;
+    border: 3px double rgb(106, 207, 168);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 35pt;
+    color: rgb(65, 153, 119);
+    font-weight: bolder;
+}
+
+hr {
+    margin: 25px 90px;   
+}
+
+#informacoes {
+    margin-top: -30px;
+    margin-left: 10px;
+    font-size: 9pt;
+    font-weight: lighter;
+    color: rgb(104, 104, 104);
+}
+
+#resumo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 5px 30px;
+}
+
+#hr-fim {
+    margin: 90px;
+}
+
+.titulo-corpo {
+    margin-left: 20px;
+}
+
+.lista-corpo {
+    margin: 25px;
+}
